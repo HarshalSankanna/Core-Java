@@ -54,8 +54,14 @@ public class String1 {
 
         String str1 = "ABCD";
         byte b[] = str1.getBytes();
+        // for (int i = 0; i < b.length; i++) {
+        // System.out.println(b[i]);
+        // }
         for (int i = 0; i < b.length; i++) {
-            System.out.println(b[i]);
+            b[i] = (byte) (b[i] + 32);
+        }
+        for (int i = 0; i < b.length; i++) {
+            System.out.println((char) b[i]);
         }
     }
 }
