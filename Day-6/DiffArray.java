@@ -2,8 +2,8 @@ import java.util.Arrays;
 
 public class DiffArray {
     public static void main(String[] args) {
-        int nums1[] = { 1, 2, 3 };
-        int nums2[] = { 2, 4, 6 };
+        int nums1[] = { 1, 2, 3, 9, 6, 8, 4 };
+        int nums2[] = { 2, 4, 6, 12, 7, 19, 76 };
         int ans[][] = new int[2][nums1.length];
         ans[0] = distinct(nums1, nums2);
         ans[1] = distinct(nums2, nums1);
